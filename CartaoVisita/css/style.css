@@ -1,0 +1,35 @@
+body{
+    margin: 0;  
+}
+
+
+.cartao{
+    background-image: url("../../Projeto02/Img/backgorund.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 200px;
+    border: 3px solid blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.cartao img{
+    width: 35px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.cartao h2{
+    margin-left: 20px;
+    font-weight: 200;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase
+}
