@@ -1,0 +1,91 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rol{
+    text-align: center;
+    height: 800px;
+}
+
+.principal1, .principal2, .principal3{
+    width: 350px;
+    height: 350px;
+    border: 2px solid blueviolet;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+.principal1 div, .principal2 div, .principal3 div{
+   width: 100px;
+   height: 100px;
+   border: 2px dashed black;
+   margin: 3px;
+}
+
+.Blue1, .Blue2, .Blue3 {
+    background-color: blue;
+}
+
+.Green1, .Green2, .Green3 {
+    background-color: Green;
+}
+
+.Red1, .Red2, .Red3 {
+    background-color: Red;
+}
+
+/*Div Principal 1*/
+.principal1{
+    position: relative;
+}
+
+.Green1{
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+}
+
+.Blue1{
+    position: relative;
+    left: 80px;
+    bottom: -20px;
+}
+
+/*Div Principal 2*/
+.principal2{
+    position: relative;
+}
+
+.Green2{
+    position: fixed;
+    left: 530px;
+    bottom: 600px;
+}
+
+.Blue2{
+    position: sticky;
+    top: 0;
+}
+
+/*Div Principal 3*/
+.principal3{
+    position: relative;
+}
+
+.Red3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.Blue3{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.Green3{
+    position: sticky;
+    top: 0;
+}
