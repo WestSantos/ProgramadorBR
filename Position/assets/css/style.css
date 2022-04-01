@@ -9,7 +9,7 @@ main{
     height: 800px;
 }
 
-.principal1, .principal2, .principal3{
+.principal{
     width: 350px;
     height: 350px;
     border: 2px solid blueviolet;
@@ -17,7 +17,7 @@ main{
     box-sizing: border-box;
 }
 
-.principal1 div, .principal2 div, .principal3 div{
+.principal div{
    width: 100px;
    height: 100px;
    border: 2px dashed black;
@@ -37,7 +37,7 @@ main{
 }
 
 /*Div Principal 1*/
-.principal1{
+.principal{
     position: relative;
 }
 
@@ -53,10 +53,8 @@ main{
     bottom: -20px;
 }
 
-/*Div Principal 2*/
-.principal2{
-    position: relative;
-}
+
+
 
 .Green2{
     position: fixed;
@@ -69,10 +67,6 @@ main{
     top: 0;
 }
 
-/*Div Principal 3*/
-.principal3{
-    position: relative;
-}
 
 .Red3{
     position: absolute;
