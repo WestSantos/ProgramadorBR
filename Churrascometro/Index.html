@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascometro</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Churrascômetro</h2>
+        <Input type="number" name="adultos" id="adultos" placeholder="Adutos"></Input>
+        <br>
+        <br>
+        <Input type="number" name="criancas" id="criancas" placeholder="Crianças"></Input>
+        <br>
+        <br>
+        <Input type="number" name="duracao" id="duracao" placeholder="Duração (h)"></Input>
+        <br>
+        <br>
+        <button class="enviar" onclick="calc()">Calcular</button>
+        <div class="resultado">
+            <p id="carne"> </p>
+            <p id="cerveja"> </p>
+            <p id="bebidas"> </p>
+        </div>
+    </div>
+    
+
+</body>
+<script src="./assets/js/main.js"></script>
+</html>
