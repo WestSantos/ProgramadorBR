@@ -10,17 +10,21 @@
 <body>
     <div class="card">
         <h2>Churrascômetro</h2>
-        <Input type="number" name="adultos" id="adultos" placeholder="Adutos"></Input>
+        <p>N° Adultos</p>
+        <Input type="number" name="adultos" id="adultos" value=0 placeholder="Adutos"></Input>
         <br>
         <br>
-        <Input type="number" name="criancas" id="criancas" placeholder="Crianças"></Input>
+        <p>N° Crianças</p>
+        <Input type="number" name="criancas" id="criancas" value=0 placeholder="Crianças"></Input>
         <br>
         <br>
-        <Input type="number" name="duracao" id="duracao" placeholder="Duração (h)"></Input>
+        <p>N° Horas</p>
+        <Input type="number" name="duracao" id="duracao"  value=0 placeholder="Duração (h)"></Input>
         <br>
         <br>
         <button class="enviar" onclick="calc()">Calcular</button>
         <div class="resultado">
+            <p><strong>você vai precisar de:</strong></p>
             <p id="carne"> </p>
             <p id="cerveja"> </p>
             <p id="bebidas"> </p>
