@@ -6,23 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/fav.jpeg" type="image/jpeg">
 </head>
 <body>
-    <h1>Jogo da Velha</h1>
-    <div class="tabuleiro">
-        <div class="quadrado" id="0"></div>
-        <div class="quadrado" id="1"></div>
-        <div class="quadrado" id="2"></div>
-
-        <div class="quadrado" id="3"></div>
-        <div class="quadrado" id="4"></div>
-        <div class="quadrado" id="5"></div>
-
-        <div class="quadrado" id="6"></div>
-        <div class="quadrado" id="7"></div>
-        <div class="quadrado" id="8"></div>
-    </div>
     
+    <header class="cabecalho">
+        <div class="divCabecalho">
+            <a href="https://www.youtube.com/c/Programadorbr" target="_blank">
+                <img src="./assets/img/ProgLogo.png" alt="" class="logo">
+            </a>
+        </div>
+    </header>
+
+<main class="conteudo">
+   
+        <a href="https://www.linkedin.com/in/weslley-santos-7255b7174" target="_blank">
+            <img src="./assets/img/Logo2.png" class="page-logo" alt="">
+        </a>
+        <h1>Jogo da Velha</h1>
+
+        <div class="placar esconder" id="placar">
+            <h3>Placar</h3>
+            <p id="placarJog01"> </p>
+            <p id="placarJog02"> </p>
+        </div>
+
+        <div class="formEdit" id="formInv">
+
+            <div class="form">
+                <h3>Nome dos Jogadores</h3>
+                <input placeholder="Jogador 01:" id="jog01" type="text">
+            
+                <input placeholder="Jogador 02:" id="jog02" type="text">
+                <br>
+                <button class="botao" onclick="comecar()">Começar</button>
+            </div>
+        </div>
+
+        <div class="esconder" id="inv">
+            <div class="tabuleiro">
+                <div class="quadrado q1" id="0"></div>
+                <div class="quadrado q2" id="1"></div>
+                <div class="quadrado q3" id="2"></div>
+
+                <div class="quadrado q4" id="3"></div>
+                <div class="quadrado q5" id="4"></div>
+                <div class="quadrado q6" id="5"></div>
+
+                <div class="quadrado q7" id="6"></div>
+                <div class="quadrado q8" id="7"></div>
+                <div class="quadrado q9" id="8"></div>
+            </div>
+        </div>
+    
+        <div class="hidden" id="hidden">
+        
+        </div>
+    
+</main>
+
+    <footer>
+        <div class="footer-content" id="sobre">
+            <h3>Sobre</h3>
+            <p >Projeto desenvolvido por meio do <strong>Curso Full-Stack do ProgramadorBR </strong> e modificado por mim
+                para ficar com um layout mais clean e responsivo.</p>
+
+            <h3>Contatos</h3>
+
+            <p>Me Siga nas Redes Socias ou Entre em contato😉</p>
+
+            <a href="https://wa.me/message/G4FXOZFUYTXPE1" target="_blank"><img
+                     src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+                     alt="whatsApp"></a>
+
+            <a href="https://www.linkedin.com/in/weslley-santos-7255b7174" target="_blank"><img
+                     src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                     alt="LinkedIn" target="_blank"></a>
+
+            <a href="https://github.com/WestSantos" target="_blank"><img
+                     src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                     alt="LinkedIn" target="_blank"></a>
+
+            <a href="https://web.facebook.com/weslley.teodoro.359" target="_blank"><img
+                     src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"
+                     alt="Facebook"></a>
+
+            <a href="https://instagram.com/weslley.santos4545" target="_blank"><img
+                     src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                     alt="Instagram"></a>
+
+            <a href="mailto:weslley.santos4545@gmail.com"><img
+                     src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+                     alt="G-mail" target="_blank"></a>
+
+
+
+
+        </div>
+    </footer>
+    
+
     <script src="./assets/js/game.js"></script>
     <script src="./assets/js/interface.js"></script>
 </body>

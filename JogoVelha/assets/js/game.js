@@ -1,9 +1,9 @@
 let board = ['','','','','','','','',''];
 let playerTime = 0;
 let gameOver = false;
+let empate = false;
 
 let symbols = ['O', 'X'];
-
 let winStates = [
     [0, 1, 2],
     [3, 4, 5],
@@ -36,7 +36,8 @@ function handleMove(position){
             // } else {
             //     playerTime = 0;
             // }
-        }
+
+        } 
     }
     return gameOver;
 }
@@ -52,13 +53,15 @@ function isWin() {
         let pos2 = seq[1];
         let pos3 = seq[2];
 
-        if(board[pos1] == board[pos2] && 
-            board[pos1] == board[pos3] && 
-             board[pos1] != ''){
-
-                return true;
-            } 
+        if(board[pos1] == board[pos2] && board[pos1] == board[pos3] && board[pos1] != ''){
+            return true;
+        };       
     }
-
+    if(board.indexOf('') == -1){
+        empate = true;
+        return true;      
+        };
     return false;
 }
+
+

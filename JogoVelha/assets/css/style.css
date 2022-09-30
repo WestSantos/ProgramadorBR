@@ -1,26 +1,148 @@
-h1{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #b6d3fe;
+    
+    
+}
+
+.cabecalho, .divCabecalho{
+    width: 100%;
+    height: 40px; 
+    margin: 0;
+}
+  
+.divCabecalho{
+    background-color: #0D6EFD;
+    position: fixed;
+}
+.logo {
+    width: 35px;
+    position: absolute;
+    right: 10px;
+}
+
+.page-logo {
+    width: 280px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 35px;
+  }
+
+.conteudo{
+    background-color: #b6d3fe;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+}
+  
+
+
+
+footer div {
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0D6EFD;
+    color:white;
+    display: block;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    
+  }
+  .footer-content img{
+    border-radius: 16px;
+    padding-top: 3px;
+  }
+  
+  .footer-content{
+    text-align: center;
+    padding-bottom: 20px ;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    
+      .conteudo{
+        background-color: #b6d3fe;
+        position: relative;
+        width: 100%;
+        height: 700px;
+        
+      
+    }
+  }
+  
+
+h1, h3{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+h1{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+input{
+    margin-top: 3px;
+}
 .tabuleiro{
     display: flex;
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
+    width: 350px;
+    height: 350px;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
     justify-content: space-around;
     margin: auto;
+    margin-top: 15px;
+  
 }
 .quadrado{
     width: 32%;
     height: 32%;
-    background-color: white;
     align-items: center;
     text-align: center;
-    border: 1px solid black;
+
+    
 }
+
+
+.q1,.q2,.q3,.q4,.q6,.q7,.q8,.q9{
+    border-width: 3px;
+    border-color: black;
+}
+.q1{
+    border-right-style: solid;
+    border-bottom-style: solid;
+}
+.q2{
+    border-bottom-style: solid;
+}
+.q3{
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+.q4{
+    border-right-style: solid;
+}
+.q6{
+    border-left-style: solid;
+}
+.q7{
+    border-right-style: solid;
+    border-top-style: solid;
+}
+.q8{
+    border-top-style: solid;
+}
+.q9{
+    border-left-style: solid;
+    border-top-style: solid;
+}
+
+
 
 .O{
     position: relative;
@@ -46,3 +168,65 @@ h1{
     line-height: 125px;
    
 }
+
+.hidden{
+    text-align: center;
+    margin: 20px;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar{
+    display: flex;
+}
+.botao{
+    margin: 5px;
+    
+}
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    transition: backgroung-color 800ms ease-out, border 800ms;
+    background-color: white;
+}
+.button:hover{
+    background-color: rgb(201, 201, 201);
+    border: 2px black solid;
+}
+.formEdit{
+    text-align: center;
+
+}
+
+.form{
+    border: 1px black solid;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    padding: 5px 20px 5px 20px;
+    width: 270px;
+}
+
+.form p, button{
+    margin: 15px 0 0 0;
+    
+    
+}
+
+.placar {
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+}
+.placar p, h3{
+    margin: 0;
+}
+
